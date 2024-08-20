@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HSR LeadHub - Lead Listing</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>HSR LeadHub</h1>
+        <nav>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="lead-management.html">Lead Management</a>
+        </nav>
+        <div class="profile">
+            <span>User</span>
+        </div>
+    </header>
+    <main>
+        <div class="search-bar">
+            <input type="text" placeholder="Search leads...">
+        </div>
+        <div class="filters">
+            <label for="status">Status:</label>
+            <select id="status">
+                <option>All</option>
+                <option>New</option>
+                <option>In Progress</option>
+                <option>Closed</option>
+            </select>
+            <!-- Add more filters as needed -->
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Lead ID</th>
+                    <th>Name</th>
+                    <th>Company</th>
+                    <th>Status</th>
+                    <th>Source</th>
+                    <th>Date Added</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Example data rows -->
+                <tr>
+                    <td>1</td>
+                    <td>John Doe</td>
+                    <td>Acme Corp</td>
+                    <td>New</td>
+                    <td>Web</td>
+                    <td>2024-08-20</td>
+                    <td>
+                        <a href="lead-details.html">View Details</a>
+                        <button>Edit</button>
+                        <button>Delete</button>
+                    </td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+        <button class="new-lead">Add New Lead</button>
+    </main>
+</body>
+</html>
